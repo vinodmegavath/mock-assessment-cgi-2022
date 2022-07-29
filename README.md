@@ -83,7 +83,10 @@ Develop the Microservices Application Using Spring Boot by using following requi
                      
                      }
                      
+   -------------------------------------------------------------------------------------------------------------------
+   
    - The following URL to test it for student-service:
+   
                    -
                     URL: http://localhost:7002/api/save
                     Method: POST
@@ -92,7 +95,8 @@ Develop the Microservices Application Using Spring Boot by using following requi
                                   "mobilenum":"9988771122"
                            }
                    
-                   URL: http://localhost:7002/api/1
+                  - 
+                  URL: http://localhost:7002/api/1
                    Method:GET
                    Response{
                               "id" : 1,

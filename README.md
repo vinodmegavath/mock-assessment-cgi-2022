@@ -28,13 +28,15 @@ Develop the Microservices Application Using Spring Boot by using following requi
                                    
                                    -saveStudent()
                                         - save the  student information
-                                   -getAllStudent()
-                                         - getAll student information along with course details.
+                                   -getStudentAndCourseById()
+                                         - get the  student and it's course details based on  course  id.
   
   - Step2:  Develop the course-service by taking the following details:
+  - 
                             - com.cgi.main
                                     - CourseMainApplication.java
-                  - com.cgi.model
+                 
+                 - com.cgi.model
                           - Course
                             -id
                             -name
@@ -52,6 +54,8 @@ Develop the Microservices Application Using Spring Boot by using following requi
                                    
                                    -saveCourse()
                                         - save the  course information
+                                   -getCourseById()
+                                        - get the course by id
                                    -getAllCourse()
                                          - getAll course information.
  ----------------------------------------------------------------------------------------------------------------------------------
@@ -82,6 +86,18 @@ Develop the Microservices Application Using Spring Boot by using following requi
                                  "duration":30
                      
                      }
+                     -
+                     URL: http://localhost:7001/api/course/1
+                     Method:GET
+                     Response:
+                     {
+                     
+                                 "id":1,
+                                 "name":"JAVA",
+                                 "duration":30
+                     
+                     }
+                     
                      
    -------------------------------------------------------------------------------------------------------------------
    
@@ -92,7 +108,8 @@ Develop the Microservices Application Using Spring Boot by using following requi
                     Method: POST
                     Body  :{
                                   "name":"RAJU",
-                                  "mobilenum":"9988771122"
+                                  "mobilenum":"9988771122",
+                                  "cid":1
                            }
                    
                   - 
